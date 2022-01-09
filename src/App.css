@@ -1,5 +1,26 @@
-footer {
+.App-logo {
+  max-width: 22rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.App .container {
+  margin: 3rem 0;
+}
+
+.App h1,
+h2 {
   text-align: center;
-  font-size: 0.9rem;
-  margin: 1rem;
+}
+
+.App footer {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+@media (min-width: 800px) {
+  .App-logo {
+    max-width: 30rem;
+  }
 }
