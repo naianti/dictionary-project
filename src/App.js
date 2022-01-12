@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import logo from "./logo.png";
 import Dictionary from "./Dictionary";
@@ -12,7 +13,7 @@ export default function App() {
         </header>
         <main>
           <h2>Improve your vocabulary and pronunciation</h2>
-          <Dictionary />
+          <Dictionary defaultKeyword="Abracadabra" />
         </main>
         <footer>Code by Nai Antillano</footer>
       </div>
