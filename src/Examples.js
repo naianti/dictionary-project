@@ -1,11 +1,12 @@
 import React from "react";
+import "./Examples.css";
 
 export default function Synonyms(props) {
   if (props.examples) {
     return (
-      <div>
-        <strong>Example:</strong>
-        <em>{props.examples}</em>
+      <div className="Examples">
+        <span>Example:</span>
+        <span className="example-text"> {props.examples}</span>
       </div>
     );
   } else {

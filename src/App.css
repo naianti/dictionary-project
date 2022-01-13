@@ -1,26 +1,63 @@
 .App-logo {
-  max-width: 22rem;
+  max-width: 20rem;
   display: block;
   margin: 0 auto;
 }
 
-.App .container {
-  margin: 3rem 0;
+.App header {
+  margin-top: 1.5rem;
+}
+
+.App h2 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.App h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.App h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
 }
 
 .App h1,
 h2 {
+  color: white;
   text-align: center;
 }
 
 .App footer {
   font-size: 1.2rem;
   text-align: center;
-  margin: 2rem 0;
+  color: white;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 800px) {
+  .App .container {
+    width: 60%;
+  }
+
   .App-logo {
     max-width: 30rem;
+  }
+
+  .App h2 {
+    font-size: 1.8rem;
+  }
+
+  .App h1 {
+    font-size: 3.2rem;
+  }
+
+  .App h3 {
+    font-size: 2.2rem;
+  }
+
+  .App footer {
+    font-size: 1.2rem;
   }
 }

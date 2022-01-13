@@ -9,10 +9,12 @@ export default function App() {
       <div className="container">
         <header>
           <img src={logo} className="App-logo" alt="logo" />
-          <h1>Choose words wisely!</h1>
+          <h1>Words are powerful...!</h1>
         </header>
         <main>
           <h2>Improve your vocabulary and pronunciation</h2>
+
+          <h3>Here! What word are you looking for?</h3>
           <Dictionary defaultKeyword="Abracadabra" />
         </main>
         <footer>Code by Nai Antillano</footer>

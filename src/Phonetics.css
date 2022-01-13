@@ -1,8 +1,8 @@
 .Phonetics {
-  border: 0.2rem solid rgb(201, 10, 10);
+  border: 0.2rem solid rgb(9, 140, 180);
   border-radius: 2rem;
-  margin-top: 2rem;
-  padding: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .Phonetics i {

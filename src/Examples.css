@@ -1,0 +1,8 @@
+.Examples span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.Examples .example-text {
+  font-weight: normal;
+}

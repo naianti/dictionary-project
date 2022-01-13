@@ -1,0 +1,12 @@
+.Meaning h5 {
+  font-size: 2.4rem;
+}
+
+.Meaning span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.Meaning .meaning-text {
+  font-weight: normal;
+}

@@ -33,14 +33,15 @@ export default function Dictionary(props) {
 
   if (loaded) {
     return (
-      <div className="Dictionary align-items-center">
+      <div className="Dictionary">
         <section>
-          <form className="searcher" onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <div className="row">
-              <div className="col-6 col-md-4">
+              <div className="col-8 col-md-6">
                 <input
                   type="search"
                   className="form-control"
+                  defaultValue={props.defaultKeyword}
                   placeholder="Type any word  "
                   autoComplete="off"
                   autoFocus="on"
@@ -48,11 +49,15 @@ export default function Dictionary(props) {
                 />
               </div>
 
-              <div className="col-6 col-md-2">
+              <div className="col-4 col-md-2">
                 <input type="submit" className="button" value="Go!" />
               </div>
             </div>
           </form>
+
+          <div className="hint">
+            Try: Hygge, Lullaby, Felicity, Lithe, Ineffable...
+          </div>
         </section>
 
         <Results results={results} />
