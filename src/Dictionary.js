@@ -1,20 +1,32 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
+import Giphy from "./Giphy";
+
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
   let [keyword, setKeyword] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
+  let [giphy, setGiphy] = useState(null);
 
-  function handleResponse(response) {
+  function handleDictionaryResponse(response) {
     setResults(response.data[0]);
   }
 
+  function handleGiphyResponse(response) {
+    setGiphy(response.data);
+  }
+
   function Search() {
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+    const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiUrl).then(handleDictionaryResponse);
+
+    const apiKey = "8FFnP3N1iok2KpfxFSUmiGTTMFsZlmep";
+    const giphyUrl = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${keyword}&limit=8&offset=0&rating=g&lang=en`;
+
+    axios.get(giphyUrl).then(handleGiphyResponse);
   }
 
   function handleSubmit(event) {
@@ -56,11 +68,13 @@ export default function Dictionary(props) {
           </form>
 
           <div className="hint">
-            Try: Hygge, Lullaby, Felicity, Lithe, Ineffable...
+            Try: Hygge, Lullaby, Felicity, Hygge, Ineffable...
           </div>
         </section>
 
         <Results results={results} />
+
+        <Giphy giphy={giphy} />
       </div>
     );
   } else {

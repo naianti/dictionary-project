@@ -12,7 +12,6 @@ export default function Results(props) {
 
           <Phonetics phonetics={props.results.phonetics} />
         </section>
-
         {props.results.meanings.map(function (meaning, index) {
           return (
             <section key={index}>
