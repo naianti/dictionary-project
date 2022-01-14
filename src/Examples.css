@@ -5,4 +5,11 @@
 
 .Examples .example-text {
   font-weight: normal;
+  font-style: italic;
+}
+
+@media (min-width: 800px) {
+  .Examples .example-text {
+    font-size: 1.6rem;
+  }
 }

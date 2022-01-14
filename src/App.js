@@ -17,7 +17,16 @@ export default function App() {
           <h3>Here! What word are you looking for?</h3>
           <Dictionary defaultKeyword="Abracadabra" />
         </main>
-        <footer>Code by Nai Antillano</footer>
+        <footer>
+          Code by Nai Antillano and open-sourced{" "}
+          <a
+            href="https://github.com/naianti/dictionary-project"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+        </footer>
       </div>
     </div>
   );

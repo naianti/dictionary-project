@@ -30,10 +30,15 @@ h2 {
 }
 
 .App footer {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: center;
   color: white;
-  margin-bottom: 1rem;
+  margin: 2rem;
+}
+
+.App footer a {
+  text-decoration: none;
+  color: aquamarine;
 }
 
 @media (min-width: 800px) {
@@ -58,6 +63,6 @@ h2 {
   }
 
   .App footer {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 }

@@ -10,3 +10,9 @@
 .Meaning .meaning-text {
   font-weight: normal;
 }
+
+@media (min-width: 800px) {
+  .Meaning .meaning-text {
+    font-size: 1.6rem;
+  }
+}
