@@ -3,9 +3,18 @@
   font-weight: bold;
 }
 
-.Synonyms .synonyms-text {
-  font-size: 13px;
-  display: inline-block;
-  padding-right: 10px;
-  line-height: 1;
+.Synonyms button {
+  background-color: rgb(4, 211, 247);
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  margin: 0.2rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 2rem;
+}
+
+.Synonyms button:hover {
+  opacity: 20%;
+  transition: all 500ms ease;
 }

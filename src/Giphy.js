@@ -13,6 +13,7 @@ export default function Giphy(props) {
                   target="_blank"
                   rel="noreferrer"
                 ></a>
+
                 <img
                   src={giphy.images.fixed_width.url}
                   alt="gifs"

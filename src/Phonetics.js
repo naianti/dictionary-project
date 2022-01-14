@@ -2,7 +2,6 @@ import React from "react";
 import "./Phonetics.css";
 
 export default function Phonetics(props) {
-  console.log(props);
   function playAudio(event) {
     event.preventDefault();
     const audio = new Audio(props.phonetics[0].audio);
@@ -10,11 +9,11 @@ export default function Phonetics(props) {
   }
 
   return (
-    <div className="Phonetics">
+    <span className="Phonetics">
       <a href="/" onClick={playAudio}>
         <i className="fa fa-volume-up"></i>
       </a>
       <span className="phonetics-text">/{props.phonetics[0].text}/</span>
-    </div>
+    </span>
   );
 }
