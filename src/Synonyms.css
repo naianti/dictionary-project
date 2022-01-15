@@ -1,13 +1,8 @@
-.Synonyms span {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-
 .Synonyms button {
   background-color: rgb(4, 211, 247);
   border: none;
   border-radius: 2rem;
-  color: white;
+  color: rgb(54, 52, 52);
   font-size: 1.2rem;
   margin: 0.2rem;
   margin-top: 0.5rem;
@@ -17,4 +12,9 @@
 .Synonyms button:hover {
   opacity: 20%;
   transition: all 500ms ease;
+}
+
+.Synonyms span {
+  font-size: 1.4rem;
+  font-weight: bold;
 }

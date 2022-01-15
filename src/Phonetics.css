@@ -3,10 +3,6 @@
   padding: 1rem;
 }
 
-.Phonetics i {
-  margin-right: 2rem;
-}
-
 .Phonetics a {
   color: rgb(35, 10, 94);
   font-size: 2rem;
@@ -15,6 +11,10 @@
 
 .Phonetics a:hover {
   opacity: 70%;
+}
+
+.Phonetics i {
+  margin-right: 2rem;
 }
 
 .Phonetics .phonetics-text {
